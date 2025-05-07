@@ -140,7 +140,7 @@ if options =='Introduction':
     source country offering insights into the historical context and global distribution of nuclear testing. """)
 
     #displaying an image
-    image_path = "C:\\Users\\crswe\\OneDrive - Bentley University\\Spring 2025\\CS 230\\nuclear_expolsion_picture.jpg"
+    image_path = "nuclear_expolsion_picture.jpg"
     img = Image.open(image_path)
     st.image(img, width=700, caption="Nuclear Explosion")
 
