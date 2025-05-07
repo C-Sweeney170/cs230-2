@@ -21,7 +21,7 @@ from PIL import Image
 
 
 #reading the data from the csv into a panda
-file_path = "C:\\Users\\crswe\\OneDrive - Bentley University\\Spring 2025\\CS 230\\nuclear_explosions.csv"
+file_path = "nuclear_explosions.csv"
 nuclear  = pd.read_csv(file_path)
 
 #updating the column names of latitude and longitude so they can be read by the map
