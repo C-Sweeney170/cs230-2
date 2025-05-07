@@ -32,6 +32,10 @@ nuclear.rename(columns={"Location.Cordinates.Latitude":"lat", "Location.Cordinat
 nuclear['Date'] = (nuclear['Date.Month'].astype(str) + '-' + nuclear['Date.Day'].astype(str) +
                    '-' +nuclear['Date.Year'].astype(str))
 
+#converting to date time to add sorting 
+#documetnation of date time https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.to_datetime.html
+nuclear['Date_time'] = pd.to_datetime(nuclear['Date'], format='%m-%d-%Y')
+
 #Averging the lower and upper yield [DA9] Add a new column or perform calculations on DataFrame columns
 nuclear["Yield Average"] = (nuclear['Data.Yeild.Lower'] + nuclear['Data.Yeild.Upper'])/2
 
