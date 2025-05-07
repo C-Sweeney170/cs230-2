@@ -152,7 +152,7 @@ if options =='Introduction':
     st.header("Here are some important facts")
 
     #sorting the data so the earliest date is first and outputting the info [DA2] Sort data in descending order by one column
-    sorted_data = nuclear.sort_values(["Date"])[['WEAPON DEPLOYMENT LOCATION', 'Data.Name', 'Date', 'Yield Average']]
+    sorted_data = nuclear.sort_values(["Date_time"])[['WEAPON DEPLOYMENT LOCATION', 'Data.Name', 'Date', 'Yield Average']]
     st.write(f"The earliest explosion was {nuclear["Data.Name"].iloc[0]} and it occurred on {nuclear["Date"].iloc[0]}.")
     st.write(sorted_data.head(1))
 
